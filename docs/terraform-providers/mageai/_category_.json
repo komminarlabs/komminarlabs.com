@@ -1,0 +1,8 @@
+{
+  "label": "Mage AI",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Terraform provider to manage Mage AI"
+  }
+}
