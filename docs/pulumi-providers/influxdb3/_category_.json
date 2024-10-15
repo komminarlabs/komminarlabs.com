@@ -1,0 +1,8 @@
+{
+  "label": "InfluxDB v3",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Pulumi provider for InfluxDB V3"
+  }
+}

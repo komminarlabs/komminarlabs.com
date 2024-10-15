@@ -1,4 +1,4 @@
-# Provider Usage
+# Usage
 
 Terraform provider to manage InfluxDB V3
 
@@ -46,3 +46,7 @@ terraform plan
 
 - `api_key` (String, Sensitive) The API key to authenticate calls
 - `host` (String, Sensitive) The host of the Mage AI server
+
+## Provider Documentation
+
+Refer [here](https://registry.terraform.io/providers/komminarlabs/mageai/latest/docs) for the provider documentation.

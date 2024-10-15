@@ -86,6 +86,18 @@ const config: Config = {
           label: 'Terraform Providers',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Terraform Modules',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Pulumi Providers',
+        },
+        {
           href: 'https://github.com/komminarlabs',
           label: 'GitHub',
           position: 'right',

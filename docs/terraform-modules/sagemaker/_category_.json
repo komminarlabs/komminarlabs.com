@@ -1,0 +1,8 @@
+{
+  "label": "AWS SageMaker Studio",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Terraform module to create and manage a SageMaker studio"
+  }
+}

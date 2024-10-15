@@ -1,4 +1,4 @@
-# Provider Usage
+# Usage
 
 Terraform provider to manage InfluxDB.
 
@@ -52,3 +52,7 @@ provider "influxdb" {
 * `influxdb_authorization`
 * `influxdb_bucket`
 * `influxdb_organization`
+
+## Provider Documentation
+
+Refer [here](https://registry.terraform.io/providers/komminarlabs/influxdb/latest/docs) for the provider documentation.

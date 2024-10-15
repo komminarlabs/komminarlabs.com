@@ -14,8 +14,10 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/Terraform-LogoMark_onLight.svg').default,
     description: (
       <>
-        Discover our extensive library of open-source Terraform providers at Komminar Labs, trusted by thousands for seamless integrations and enhanced control.
-        Continuously updated, these providers empower you to accelerate your infrastructure management and streamline your automation efforts.
+        Komminar Labs offers specialized Terraform Providers for InfluxDB, InfluxDB v3, CrateDB, and Mage AI.
+        Our providers make it easy to deploy, configure, and manage these powerful platforms,
+        freeing you to focus on insights and AI innovation. Designed for reliability and performance,
+        they simplify integrations and scale to meet your needs.
       </>
     ),
   },
@@ -24,8 +26,9 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/Terraform-LogoMark_onLight.svg').default,
     description: (
       <>
-        Explore our collection of open-source Terraform modules at Komminar Labs, designed for seamless integration and enhanced control.
-        Continuously updated, these modules empower you to accelerate your infrastructure projects and streamline your workflows.
+        Our Terraform Modules streamline the setup of AWS data services like Glue, SageMaker, and Managed Grafana.
+        With pre-built solutions that follow best practices, these modules let you quickly build scalable data and AI workflows on AWS.
+        Ideal for simplifying complex setups, they keep your team focused on delivering results.
       </>
     ),
   },
@@ -34,8 +37,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/avatar-on-black.svg').default,
     description: (
       <>
-        Discover our rich library of open-source Pulumi providers at Komminar Labs, crafted for effective infrastructure as code management.
-        By leveraging Pulumi's innovative approach, you can define and provision cloud resources using familiar programming languages.
+        Komminar Labs’ Pulumi Providers for InfluxDB, CrateDB, and Mage AI let you manage cloud infrastructure using languages like Python, TypeScript, and Go.
+        These providers streamline automation and scaling for teams working on time-series data and AI/ML applications, making infrastructure as code accessible and efficient.
       </>
     ),
   },
