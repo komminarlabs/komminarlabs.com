@@ -1,4 +1,4 @@
-# Provider Usage
+# Usage
 
 Terraform provider to manage InfluxDB V3
 
@@ -44,3 +44,7 @@ provider "influxdb3" {
 
 * `influxdb3_database`
 * `influxdb3_token`
+
+## Provider Documentation
+
+Refer [here](https://registry.terraform.io/providers/komminarlabs/influxdb3/latest/docs) for the provider documentation.

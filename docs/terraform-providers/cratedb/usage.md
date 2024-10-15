@@ -1,4 +1,4 @@
-# Provider Usage
+# Usage
 
 Terraform provider to manage CrateDB.
 
@@ -40,3 +40,7 @@ provider "cratedb" {
 * `cratedb_cluster`
 * `cratedb_organization`
 * `cratedb_project`
+
+## Provider Documentation
+
+Refer [here](https://registry.terraform.io/providers/komminarlabs/cratedb/latest/docs) for the provider documentation.

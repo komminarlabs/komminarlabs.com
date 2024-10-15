@@ -1,0 +1,85 @@
+# Examples
+
+The InfluxDB provider for Pulumi can be used to provision the resources available in [InfluxDB](https://www.influxdata.com/).
+
+The InfluxDB provider must be configured with credentials to deploy and update resources in InfluxDB; see [Installation & Configuration](./usage) for instructions.
+
+## Supported InfluxDB flavours
+
+### v3
+
+* [InfluxDB Cloud Serverless](https://www.influxdata.com/products/influxdb-cloud/serverless/)
+
+### v2
+
+* [InfluxDB Cloud TSM](https://docs.influxdata.com/influxdb/cloud/)
+* [InfluxDB OSS](https://docs.influxdata.com/influxdb/v2/)
+
+## Example
+
+### Typescript
+
+```typescript
+import * as pulumi from "@pulumi/pulumi";
+import * as influxdb from "@komminarlabs/influxdb";
+
+// Create a new Bucket
+export const orgId = influxdb.getOrganizationOutput({ name: "IoT" }).id;
+
+export const bucket = new influxdb.Bucket("signals", {
+    orgId: orgId,
+    name: "signals",
+    description: "This is a bucket to store signals",
+    retentionPeriod: 604800,
+});
+
+// Get the id of the new bucket as an output
+export const bucketId = bucket.id;
+```
+
+### Python
+
+```python
+import komminarlabs_influxdb as influxdb
+
+org_id = influxdb.get_organization(name="IoT").id
+
+bucket = influxdb.Bucket(
+    "signals",
+    org_id=org_id,
+    name="signals",
+    description="This is a bucket to store signals",
+    retention_period=604800,
+)
+```
+
+### Go
+
+```go
+import (
+	influxdb "github.com/komminarlabs/pulumi-influxdb/sdk/go/influxdb"
+	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
+)
+
+func main() {
+	pulumi.Run(func(ctx *pulumi.Context) error {
+		org, err := influxdb.LookupOrganization(ctx, &influxdb.LookupOrganizationArgs{Name: "IoT"})
+		if err != nil {
+			return err
+		}
+
+		signals, err := influxdb.NewBucket(ctx, "signals", &influxdb.BucketArgs{
+			OrgId:           pulumi.String(org.Id),
+			Name:            pulumi.String("signals"),
+			Description:     pulumi.String("Bucket for storing signal data"),
+			RetentionPeriod: pulumi.Int(604800),
+		})
+		if err != nil {
+			return err
+		}
+
+		ctx.Export("bucketId", signals.ID())
+		return nil
+	})
+}
+```
