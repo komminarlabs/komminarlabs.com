@@ -81,19 +81,19 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'terraformProvidersSidebar',
           position: 'left',
           label: 'Terraform Providers',
         },
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'terraformModulesSidebar',
           position: 'left',
           label: 'Terraform Modules',
         },
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'pulumiProvidersSidebar',
           position: 'left',
           label: 'Pulumi Providers',
         },
